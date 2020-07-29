@@ -1,0 +1,13 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+    name: function-export-blueprint
+upstream:
+    type: git
+    git:
+        commit: ea678d35a97d502c01d37a2251387d2d90f98de4
+        repo: https://github.com/GoogleContainerTools/kpt
+        directory: package-examples/function-export-blueprint
+        ref: master
+packageMetadata:
+    shortDescription: example blueprint for kpt fn export
